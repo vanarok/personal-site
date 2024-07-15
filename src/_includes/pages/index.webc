@@ -2,12 +2,11 @@
     <div class="top-container">
         <section class="hero">
             <h1 @raw="title"></h1>
-            <eleventy-image width="1024px" height="1024px" class="neko" src="src/assets/images/neko.png" alt="" />
+            <eleventy-image width="1024px" height="1024px" class="neko" src="src/assets/images/neko.png" alt="Neko" />
         </section>
 
         <section class="about">
-            <eleventy-image alt="Ivan Isekeev" width="1024" height="1024" class="me-avatar"
-                src="src/assets/images/me.jpg"></eleventy-image>
+            <eleventy-image alt="Ivan Isekeev" width="1024" height="1024" class="me-avatar" src="src/assets/images/me.jpg"></eleventy-image>
             <div class="content" @raw="content"></div>
         </section>
     </div>
@@ -47,14 +46,18 @@
     
     .neko {
         display: none;
+        height: 10em;
+        width: 18em;
+        object-fit: cover;
     }
     
     .me-avatar {
-        width: 100%;
         object-fit: cover;
         margin-bottom: 0;
         filter: grayscale(0.5);
         border: 0.5em solid var(--primary-color);
+        min-height: 18em;
+        width: 18em;
     }
 
     section {
@@ -114,7 +117,7 @@
     }
     .hero {
         text-align: start;
-        height: auto;
+        width: 400px;
         min-width: 400px;
         overflow-wrap: break-word;
 
@@ -128,9 +131,6 @@
 
     .neko {
         display: block;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
     }
 
     .about {
@@ -150,7 +150,7 @@
 
     .me-avatar {
         width: 100%;
-        height: auto;
+        height: 18em;
     }
 
 }
