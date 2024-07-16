@@ -4,6 +4,12 @@
 publish = "dist"
 command = "pnpm run build"
 
+[[redirects]]
+from = "https://ivanisekeev.netlify.app"
+to = "https://ivanisekeev.com"
+status = 301
+force = true
+
 # redirect to russian or english landing pages
 
 [[redirects]]
