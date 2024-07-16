@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c666b2c-6bd5-4095-b694-484751e3275a/deploy-status)](https://app.netlify.com/sites/ivanisekeev/deploys)
 # IVANISEKEEV.COM
 
 Personal website and blog of Ivan Isekeev
